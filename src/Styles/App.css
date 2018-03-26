@@ -1,1 +1,46 @@
+h1 { text-transform: uppercase; font-weight: 400;}
+#root {
+	display: flex;
+	justify-content: center;
+}
+.App { 
+	width: 500px;
 
+}
+.StreamersContainer{
+	display: flex;
+	flex-direction: column;
+}
+
+.streamer {
+	display: flex;
+	margin: 10px;
+	border: 2px solid rgba(255,255,255,0.3);
+	transition: all .3s ease;
+}
+.streamer:hover {
+	border-color: white;
+}
+.streamer .img-wrapper { width: 100px; height: auto;}
+.streamer .img-wrapper img{ display: block; max-width: 100%;}
+.streamer .text {  padding: 15px; flex: 1; display: flex; align-items: center;}
+.streamer .text h2 { margin: 0;  color: rgba(255,255,255,0.5); transition: all .3s ease; }
+.streamer .text a { text-decoration: none; }
+.streamer .text h2:hover { color: #fff;}
+.streamer p { color: #fff; margin: 0; margin-top: 10px;}
+.streamer .status .streaming{
+	background-color: red;
+	width: 10px;
+	height: calc(100% + 4px);
+	margin-right: -2px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+
+}
+.streamer .status .streaming.active{ 
+	background-color: green;
+ }
+.streamer .link {
+	display: block;
+
+}
