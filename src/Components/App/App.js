@@ -78,8 +78,10 @@ const StreamersContainer = (props) => {
 				<div className='text'>
 					<a className='link' href={streamer.channel.url} target='_blank' >
 						<h2>{streamer.user.name}</h2>
-						{isStreaming && 
+						{isStreaming ? 
 								<p className="desc"><strong>Playing:</strong> {streamer.channel.game} <strong>viewers:</strong> {streamer.stream.stream.viewers}</p>
+								:
+								<p className="desc"><strong>Offline</strong></p>
 						}
 					</a>
 				</div>
